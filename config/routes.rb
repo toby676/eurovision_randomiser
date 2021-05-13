@@ -3,4 +3,8 @@ Rails.application.routes.draw do
   root to: 'main#index'
 
   post '/country', to: 'countries#create'
+
+  post '/person', to: 'person#create'
+
+  get '/person/:name', to: 'person#index'
 end

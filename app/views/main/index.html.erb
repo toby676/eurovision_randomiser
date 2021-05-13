@@ -1,1 +1,10 @@
-<h1>Hello!</h1>
+<h1>Hello Eurovision Fan!!</h1>
+
+<p>It's time to pick a country my friend</p>
+
+<%= form_with url: "/person", method: :post do |form| %>
+  <%= form.label :query, "Yaaaksimesshhhh What is your name?" %>
+  <%= form.text_field :name %>
+  <%= form.submit "Get your Country!!!!!!" %>
+<% end %>
+

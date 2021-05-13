@@ -1,0 +1,9 @@
+<h1><%= @name %></h1>
+<br>
+<img src=<%= @country.flag_asset_url %>>
+<h2> <%= @country.congratulations %>!!!!! You have been assigned</h2>
+<h1><%= @country.country_name.capitalize %></h1>
+<a href=<%= @country.rehearsal_link %>>See the rehearsal!!!</a>
+<br><br>
+<%= link_to 'Back', :back %>
+
