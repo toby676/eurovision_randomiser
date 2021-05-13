@@ -3,7 +3,9 @@
 <img src=<%= @country.flag_asset_url %>>
 <h2> <%= @country.congratulations %>!!!!! You have been assigned</h2>
 <h1><%= @country.country_name.capitalize %></h1>
-<a href=<%= @country.rehearsal_link %>>See the rehearsal!!!</a>
 <br><br>
-<%= link_to 'Back', :back %>
+<iframe width="420" height="345" src=<%= @country.rehearsal_link %>>
+</iframe>
+<br><br>
+<a href="/">Home!</a>
 

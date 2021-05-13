@@ -8,3 +8,13 @@
   <%= form.submit "Get your Country!!!!!!" %>
 <% end %>
 
+
+<p>So far we have:</p>
+<% Country.where(taken: true).each do |country| %>
+  <% person = Person.find_by(country_id: country.id.to_s) %>
+ <a href=<%= "/person/" + person.name %>><%= person.name.capitalize %></a>:
+<%= country.country_name.capitalize %>!
+<br>
+<br>
+<% end %>
+
