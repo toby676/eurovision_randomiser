@@ -6,4 +6,5 @@ class Country
   field :flag_asset_url, type: String
   field :congratulations, type: String
   field :rehearsal_link, type: String
+  field :taken, type: Boolean, default: false
 end
